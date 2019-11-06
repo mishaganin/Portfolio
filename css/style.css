@@ -1,6 +1,7 @@
 body {
     background-image: url(../img/bg4.png);
     background-size: cover;
+    background-attachment: fixed;
     background-position: top center;
     min-height: 100vh;
 }
@@ -89,7 +90,7 @@ nav.fill div ul li a:hover:after {
 .aboutText {
     position: absolute;
     /* top: 16%; */
-    top: 18%;
+    /* top: 18%; */
     text-align: center;
     transform: translateY(-50%);
     transform: translateX(-50%);
@@ -103,7 +104,7 @@ nav.fill div ul li a:hover:after {
 .projectsText {
     position: absolute;
     /* top: 16%; */
-    top: 18%;
+    /* top: 18%; */
     text-align: center;
     transform: translateY(-50%);
     transform: translateX(-50%);
@@ -117,7 +118,7 @@ nav.fill div ul li a:hover:after {
 .contactsText {
     position: absolute;
     /* top: 16%; */
-    top: 18%;
+    /* top: 18%; */
     text-align: center;
     transform: translateY(-50%);
     transform: translateX(-50%);
@@ -518,16 +519,75 @@ p a{
     }
 }
 
-
-@media screen and (max-width: 965px) {
-    .rectangle {
-        height: 850px;
+@media screen and (max-width: 490px) {
+    .arrow-2 {
+        left: 84.5%;
     }
 }
 
+@media screen and (max-width: 440px) {
+    .arrow-2 {
+        left: 82.5%;
+    }
+}
+
+@media screen and (max-width: 390px) {
+    .arrow-2 {
+        left: 78.5%;
+    }
+}
+
+@media screen and (max-width: 315px) {
+    .arrow-2 {
+        left: 74.5%;
+    }
+}
+
+@media screen and (max-width: 288px) {
+    .arrow-2 {
+        left: 70.5%;
+    }
+}
+
+@media screen and (max-width: 620px) {
+    .arrow-right a {
+        left: 44%;
+    }
+}
+
+@media screen and (max-width: 540px) {
+    .arrow-right a {
+        left: 46%;
+    }
+}
+
+@media screen and (max-width: 457px) {
+    .arrow-right a {
+        left: 44%;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .arrow-right a {
+        left: 42%;
+    }
+}
+
+
+
+@media screen and (max-width: 300px) {
+    .arrow-right a {
+        left: 38%;
+    }
+}
+
+
+
+
 @media screen and (max-width: 965px) {
     .rectangle {
         height: 850px;
+        max-height: 1000px;
     }
     
 }
@@ -567,6 +627,7 @@ p a{
 @media screen and (max-width: 735px) {
     .rectangle {
         height: 900px;
+        max-height: 1000px;
     }
 }
 
@@ -596,6 +657,97 @@ p a{
 @media screen and (max-width: 579px) {
     .rectangle {
         height: 950px;
+        max-height: 1000px;
+    }
+    .h1, h1 {
+        font-size: 1.5rem;
+    }
+    .contactsLogos p {
+        font-size: 0.7rem;
+    }
+}
+
+@media screen and (max-width: 440px) {
+    .rectangle {
+        max-height: 1500px;
+        height: 1000px;
+    }
+}
+
+@media screen and (max-width: 410px) {
+    .rectangle {
+        max-height: 1500px;
+        height: 1050px;
+    }
+}
+
+@media screen and (max-width: 365px) {
+    .rectangle {
+        max-height: 1500px;
+        height: 950px;
+    }
+}
+
+@media screen and (max-width: 338px) {
+    .rectangle {
+        max-height: 1500px;
+        height: 1050px;
+    }
+}
+
+@media screen and (max-width: 313px) {
+    .rectangle {
+        max-height: 1500px;
+        height: 1150px;
+    }
+}
+
+@media screen and (max-width: 415px) {
+    .contactsLogos p {
+        font-size: 0.6rem;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .contactsLogos p {
+        font-size: 0.5rem;
+    }
+    .aboutText p {
+        font-size: 0.9rem;
+    }
+}
+
+@media screen and (max-width: 326px) {
+    .h1, h1 {
+        font-size: 1.3rem;
+    }
+}
+
+@media screen and (max-width: 310px) {
+    .contactsLogos p {
+        font-size: 0.4rem;
+    }
+}
+
+@media screen and (max-width: 294px) {
+    .h1, h1 {
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and (max-width: 276px) {
+    .h1, h1 {
+        font-size: 1.0rem;
+    }
+    .aboutText p {
+        font-size: 0.8rem;
+    }
+    
+}
+
+@media screen and (max-width: 250px) {
+    .contactsLogos p {
+        font-size: 0.2rem;
     }
 }
 
