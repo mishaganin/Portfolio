@@ -1,5 +1,5 @@
 body {
-    background-image: url(../img/bg4.png);
+    background-image: url(../img/1500x500_2.jpg);
     background-size: cover;
     background-attachment: fixed;
     background-position: top center;
@@ -384,7 +384,7 @@ nav.fill div ul li a:hover:after {
     /* background-color: rgba(0,0,0,0.65); */
     background-color: rgba(0,0,0,0.75);
     height: 370px;
-    width: 730px;
+    width: 750px;
     z-index: 5;
     position: absolute;
 }
@@ -549,27 +549,39 @@ p a{
     }
 }
 
-@media screen and (max-width: 620px) {
+@media screen and (max-width: 1300px) {
     .arrow-right a {
-        left: 44%;
+        left: 47%;
     }
 }
 
-@media screen and (max-width: 540px) {
+@media screen and (max-width: 800px) {
     .arrow-right a {
         left: 46%;
     }
 }
 
+@media screen and (max-width: 620px) {
+    .arrow-right a {
+        left: 45%;
+    }
+}
+
+@media screen and (max-width: 540px) {
+    .arrow-right a {
+        left: 43%;
+    }
+}
+
 @media screen and (max-width: 457px) {
     .arrow-right a {
-        left: 44%;
+        left: 41%;
     }
 }
 
 @media screen and (max-width: 360px) {
     .arrow-right a {
-        left: 42%;
+        left: 39%;
     }
 }
 
@@ -577,7 +589,7 @@ p a{
 
 @media screen and (max-width: 300px) {
     .arrow-right a {
-        left: 38%;
+        left: 35%;
     }
 }
 
@@ -648,6 +660,125 @@ p a{
     }
 }
 
+@media screen and (max-width: 562px) {
+    .caption-style-4 .caption-text {
+        top: 70px;
+    }
+    .caption-style-4 .caption-text h1 {
+        font-size: 0.6rem;
+        
+        margin-right: 10rem;
+        
+    }
+    .caption-style-4 .caption-text p {
+        font-size: 0.6em;
+        
+        margin-right: 10rem;
+    }
+}
+
+@media screen and (max-width: 534px) {
+    .caption-style-4 .caption-text {
+        top: 60px;
+    }
+    .caption-style-4 .caption-text h1 {
+        font-size: 0.5rem;
+        
+        margin-right: 10.5rem;
+        
+    }
+    .caption-style-4 .caption-text p {
+        font-size: 0.5em;
+        
+        margin-right: 10.5rem;
+    }
+}
+
+@media screen and (max-width: 482px) {
+    .caption-style-4 .caption-text {
+        top: 60px;
+    }
+    .caption-style-4 .caption-text h1 {
+        font-size: 0.5rem;
+        
+        margin-right: 11.5rem;
+        
+    }
+    .caption-style-4 .caption-text p {
+        font-size: 0.5em;
+        
+        margin-right: 11.5rem;
+    }
+}
+
+@media screen and (max-width: 462px) {
+    .caption-style-4 .caption-text {
+        top: 60px;
+    }
+    .caption-style-4 .caption-text h1 {
+        font-size: 0.5rem;
+        
+        margin-right: 12.5rem;
+        
+    }
+    .caption-style-4 .caption-text p {
+        font-size: 0.5em;
+        
+        margin-right: 12.5rem;
+    }
+}
+
+@media screen and (max-width: 419px) {
+    .caption-style-4 .caption-text {
+        top: 40px;
+    }
+    .caption-style-4 .caption-text h1 {
+        font-size: 0.5rem;
+        
+        margin-right: 13.5rem;
+        
+    }
+    .caption-style-4 .caption-text p {
+        font-size: 0.5em;
+        
+        margin-right: 13.5rem;
+    }
+}
+
+@media screen and (max-width: 392px) {
+    .caption-style-4 .caption-text {
+        top: 40px;
+    }
+    .caption-style-4 .caption-text h1 {
+        font-size: 0.5rem;
+        
+        margin-right: 14.5rem;
+        
+    }
+    .caption-style-4 .caption-text p {
+        font-size: 0.5em;
+        
+        margin-right: 14.5rem;
+    }
+}
+
+@media screen and (max-width: 392px) {
+    .caption-style-4 .caption-text {
+        top: 40px;
+    }
+    .caption-style-4 .caption-text h1 {
+        font-size: 0.4rem;
+        
+        margin-right: 15rem;
+        
+    }
+    .caption-style-4 .caption-text p {
+        font-size: 0.4em;
+        
+        margin-right: 15rem;
+    }
+}
+
 @media screen and (max-width: 597px) {
     .contactsLogos p {
         transform: translate(-4px, 0);
@@ -667,31 +798,38 @@ p a{
     }
 }
 
+@media screen and (max-width: 451px) {
+    .rectangle {
+        max-height: 1500px;
+        height: 1100px;
+    }
+}
+
 @media screen and (max-width: 440px) {
     .rectangle {
         max-height: 1500px;
-        height: 1000px;
+        height: 1050px;
     }
 }
 
 @media screen and (max-width: 410px) {
     .rectangle {
         max-height: 1500px;
-        height: 1050px;
+        height: 1100px;
     }
 }
 
-@media screen and (max-width: 365px) {
+@media screen and (max-width: 373px) {
     .rectangle {
         max-height: 1500px;
-        height: 950px;
+        height: 1250px;
     }
 }
 
 @media screen and (max-width: 338px) {
     .rectangle {
         max-height: 1500px;
-        height: 1050px;
+        height: 1100px;
     }
 }
 
