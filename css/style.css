@@ -6,6 +6,14 @@ body {
     min-height: 100vh;
 }
 
+.rec div {
+    margin: auto;
+    margin-top: 9.0rem;
+    margin-top: 150px;
+    background: rgba(30, 30, 30, 0.8);
+    border: 3px solid white;
+}
+
 .navbar-dark .navbar-nav .nav-link {
     /* color: rgb(197, 0, 10); */
     color: white;
@@ -148,18 +156,6 @@ nav.fill div ul li a:hover:after {
 
 .indexText h1 {
     letter-spacing: 15px;
-}
-
-.rectangle {
-    width: 40%;
-    height: 650px;
-    margin: auto;
-    margin-top: 9.0rem;
-    margin-top: 150px;
-    background: rgba(30, 30, 30, 0.8);
-    border: 3px solid white;
-    min-height: 650px;
-    max-height: 1000px;
 }
 
 .arrow-right a {
@@ -482,13 +478,6 @@ p a{
     left: 0px;
 }
 
-
-@media screen and (max-width: 1900px) {
-    .rectangle {
-        height: 750px;
-    }
-}
-
 @media screen and (max-width: 1270px) {
     .arrow-2 {
         left: 92%;
@@ -593,17 +582,6 @@ p a{
     }
 }
 
-
-
-
-@media screen and (max-width: 965px) {
-    .rectangle {
-        height: 850px;
-        max-height: 1000px;
-    }
-    
-}
-
 @media screen and (max-width: 888px) {
     .caption-style-4 .caption-text h1 {
         font-size: 0.8rem;
@@ -634,13 +612,6 @@ p a{
         
     }
     
-}
-
-@media screen and (max-width: 735px) {
-    .rectangle {
-        height: 900px;
-        max-height: 1000px;
-    }
 }
 
 @media screen and (max-width: 635px) {
@@ -786,57 +757,11 @@ p a{
 }
 
 @media screen and (max-width: 579px) {
-    .rectangle {
-        height: 950px;
-        max-height: 1000px;
-    }
     .h1, h1 {
         font-size: 1.5rem;
     }
     .contactsLogos p {
         font-size: 0.7rem;
-    }
-}
-
-@media screen and (max-width: 451px) {
-    .rectangle {
-        max-height: 1500px;
-        height: 1100px;
-    }
-}
-
-@media screen and (max-width: 440px) {
-    .rectangle {
-        max-height: 1500px;
-        height: 1050px;
-    }
-}
-
-@media screen and (max-width: 410px) {
-    .rectangle {
-        max-height: 1500px;
-        height: 1100px;
-    }
-}
-
-@media screen and (max-width: 373px) {
-    .rectangle {
-        max-height: 1500px;
-        height: 1250px;
-    }
-}
-
-@media screen and (max-width: 338px) {
-    .rectangle {
-        max-height: 1500px;
-        height: 1100px;
-    }
-}
-
-@media screen and (max-width: 313px) {
-    .rectangle {
-        max-height: 1500px;
-        height: 1150px;
     }
 }
 
@@ -890,7 +815,6 @@ p a{
 }
 
 @media screen and (max-width: 1900px) {
-    
     .caption-style-4 li{
         float: left;
         padding: 0px;
