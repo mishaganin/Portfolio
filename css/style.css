@@ -1,17 +1,79 @@
 body {
-    background-image: url(../img/bg.jpg);
-    background-size: cover;
+    background-image: url(../img/background.jpg);
     background-attachment: fixed;
     background-position: top center;
     min-height: 100vh;
 }
 
-.rec div {
+.rec .rectangleText {
     margin: auto;
     margin-top: 9.0rem;
     margin-top: 150px;
-    background: rgba(30, 30, 30, 0.8);
+    background: rgb(30, 30, 30);
     border: 3px solid white;
+    width: auto;
+}
+
+.rec .rectangleAboutText span {
+    font-size: 27px;
+}
+
+.rec .rectangleAboutPhoto {
+    width: 250px;
+    height: 250px;
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 50%;
+    transition: transform .25s ease, box-shadow .25s ease;
+    transition-duration: 500ms;
+    border: 3px solid #fff;
+    margin-bottom: 30px;
+}
+
+.rec .rectangleAboutPhoto:hover {
+    transform: translateY(3px) translateZ(0);
+    box-shadow: 0 10px 30px 0 #fff, 0 0 0 transparent;
+}
+
+.rec .rectangleAboutPersonPhoto {
+    width: auto;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.rectangleText h1 {
+   font-size: 3.3rem;
+}
+
+.rec .rectangleSkillsText h1 {
+    margin-bottom: 0;
+    padding: 10px 0;
+    border-bottom: 1px solid #fff;
+}
+
+.rec .rectangleSkillsText div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    float: left;
+    height: 200px;
+    text-align: center;
+    border: 1.7px solid #000;
+    font-size: 27px;
+    top: calc(50% - 200px);
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+
+.rec .rectangleSkillsText div:hover {
+    background-color: #ffffff;
+    /* background-color: #608be7; */
+    /* background-color: #dee760; */
+    cursor: pointer;
+    color: #000;
+    box-shadow: 0 16px 32px 0 rgba(62, 57, 107, .28), 0 0 0 transparent;
 }
 
 .navbar-dark .navbar-nav .nav-link {
@@ -84,6 +146,10 @@ nav.fill div ul li a:hover:after {
   opacity: 1;
 }
 
+h1 {
+    font-family: Nunito;
+}
+
 .indexText {
     position: absolute;
     top: 50%;
@@ -95,46 +161,18 @@ nav.fill div ul li a:hover:after {
     padding-bottom: 30px;
 }
 
-.aboutText {
+.rectangleText {
     position: absolute;
-    /* top: 16%; */
-    /* top: 18%; */
     text-align: center;
     transform: translateY(-50%);
     transform: translateX(-50%);
-    padding: 0 10px;
     left: 50%;
-    width: 40%;
-    color:  white;
-    padding-bottom: 30px;
-}
-
-.projectsText {
-    position: absolute;
-    /* top: 16%; */
-    /* top: 18%; */
-    text-align: center;
-    transform: translateY(-50%);
-    transform: translateX(-50%);
-    padding: 0 10px;
-    left: 50%;
-    width: 40%;
-    color:  white;
-    padding-bottom: 30px;
-}
-
-.contactsText {
-    position: absolute;
-    /* top: 16%; */
-    /* top: 18%; */
-    text-align: center;
-    transform: translateY(-50%);
-    transform: translateX(-50%);
-    padding: 0 10px;
-    left: 50%;
-    width: 40%;
-    color:  white;
-    padding-bottom: 30px;
+    width: calc(40% - 1px);
+    color:white;
+    /* padding-bottom: 30px; */
+    border: 3px solid white;
+    margin-top: -6px;
+    background: rgb(30, 30, 30);
 }
 
 .contactsLogos img {
@@ -152,10 +190,12 @@ nav.fill div ul li a:hover:after {
 
 .indexText h2 {
     margin-bottom: 30px;
+    font-size: 2.5rem;
 }
 
 .indexText h1 {
-    letter-spacing: 15px;
+    letter-spacing: 10px;
+    font-size: 5rem;
 }
 
 .arrow-right a {
@@ -304,12 +344,10 @@ nav.fill div ul li a:hover:after {
 /* -------------------------- */
 
 .caption-style-4{
+    display: inline-block;
     list-style-type: none;
-    /* margin: 0px; */
-    border-top: 3px solid white;
-    margin-top: 80px;
+    margin-bottom: 0;
     padding: 0px;
-    
 }
 
 .caption-style-4 li{
@@ -318,7 +356,6 @@ nav.fill div ul li a:hover:after {
     position: relative;
     overflow: hidden;
     width: 50%;
-    
 }
 
 .projectsRectangle {
@@ -327,8 +364,6 @@ nav.fill div ul li a:hover:after {
     margin: auto;
     margin-top: 9.0rem;
     margin-top: 150px;
-    background: rgba(30, 30, 30, 0.8);
-    border: 3px solid white;
     min-height: 10px;
     max-height: 1000px;
 }
@@ -365,6 +400,11 @@ nav.fill div ul li a:hover:after {
     -o-transition:all 0.45s ease-in-out;
     -ms-transition:all 0.45s ease-in-out;
     transition:all 0.45s ease-in-out;
+    top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
 }
 
 .caption-style-4 img{
@@ -377,33 +417,40 @@ nav.fill div ul li a:hover:after {
     width: 100%;
 }
 .caption-style-4 .blur{
-    /* background-color: rgba(0,0,0,0.65); */
-    background-color: rgba(0,0,0,0.75);
-    height: 370px;
-    width: 750px;
+    background-color: rgba(0,0,0,0.85);
+    height: 100%;
+    width: 100%;
     z-index: 5;
     position: absolute;
 }
 
-.caption-style-4 .caption-text h1{
-    text-transform: uppercase;
-    font-size: 24px;
-}
-.caption-style-4 .caption-text{
+.caption-style-4 .caption-text {
+    text-align: center;
     z-index: 10;
     color: #fff;
     position: absolute;
-    /* width: 400px; */
-    transform: translate(0, -10%);
-    margin-left: 0.5rem;
-    width: 350px;
-    height: 300px;
+    width: 100%;
+    height: 100%;
     align-content: center;
     vertical-align: middle;
     text-align: center;
-    top:100px;
 }
 
+.caption-style-4 .caption-text span {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    display: block;
+    vertical-align: middle;
+    line-height: normal;
+    font-size: 14px
+  }
+
+.caption-style-4 .caption-text h1 {
+    text-transform: uppercase;
+    font-size: 27px;
+    margin-bottom: 30px;
+}
 
 /** Nav Menu */
 ul.nav-menu{
@@ -469,6 +516,15 @@ p.credit{
 
 p a{
     color: #ecf0f1;
+}
+
+span a {
+    color: #ecf0f1;
+}
+
+span {
+    display: block;
+    margin-bottom: 3px;
 }
 
 /** fork icon**/
@@ -585,33 +641,19 @@ p a{
 @media screen and (max-width: 888px) {
     .caption-style-4 .caption-text h1 {
         font-size: 0.8rem;
-         
-         margin-right: 4rem;
-         
-     }
+    }
     .caption-style-4 .caption-text p {
        font-size: 0.8rem;
-        
-        margin-right: 4rem;
-        
     }
-    
 }
 
 @media screen and (max-width: 765px) {
     .caption-style-4 .caption-text h1 {
         font-size: 0.7rem;
-         
-         margin-right: 6rem;
-         
      }
     .caption-style-4 .caption-text p {
        font-size: 0.7em;
-        
-        margin-right: 6rem;
-        
-    }
-    
+    } 
 }
 
 @media screen and (max-width: 635px) {
@@ -620,14 +662,9 @@ p a{
     }
     .caption-style-4 .caption-text h1 {
         font-size: 0.7rem;
-        
-        margin-right: 9rem;
-        
     }
     .caption-style-4 .caption-text p {
         font-size: 0.7em;
-        
-        margin-right: 9rem;
     }
 }
 
@@ -637,14 +674,9 @@ p a{
     }
     .caption-style-4 .caption-text h1 {
         font-size: 0.6rem;
-        
-        margin-right: 10rem;
-        
     }
     .caption-style-4 .caption-text p {
         font-size: 0.6em;
-        
-        margin-right: 10rem;
     }
 }
 
@@ -655,13 +687,9 @@ p a{
     .caption-style-4 .caption-text h1 {
         font-size: 0.5rem;
         
-        margin-right: 10.5rem;
-        
     }
     .caption-style-4 .caption-text p {
         font-size: 0.5em;
-        
-        margin-right: 10.5rem;
     }
 }
 
@@ -671,14 +699,9 @@ p a{
     }
     .caption-style-4 .caption-text h1 {
         font-size: 0.5rem;
-        
-        margin-right: 11.5rem;
-        
     }
     .caption-style-4 .caption-text p {
         font-size: 0.5em;
-        
-        margin-right: 11.5rem;
     }
 }
 
@@ -689,13 +712,9 @@ p a{
     .caption-style-4 .caption-text h1 {
         font-size: 0.5rem;
         
-        margin-right: 12.5rem;
-        
     }
     .caption-style-4 .caption-text p {
         font-size: 0.5em;
-        
-        margin-right: 12.5rem;
     }
 }
 
@@ -706,13 +725,9 @@ p a{
     .caption-style-4 .caption-text h1 {
         font-size: 0.5rem;
         
-        margin-right: 13.5rem;
-        
     }
     .caption-style-4 .caption-text p {
         font-size: 0.5em;
-        
-        margin-right: 13.5rem;
     }
 }
 
@@ -723,13 +738,9 @@ p a{
     .caption-style-4 .caption-text h1 {
         font-size: 0.5rem;
         
-        margin-right: 14.5rem;
-        
     }
     .caption-style-4 .caption-text p {
         font-size: 0.5em;
-        
-        margin-right: 14.5rem;
     }
 }
 
@@ -740,13 +751,9 @@ p a{
     .caption-style-4 .caption-text h1 {
         font-size: 0.4rem;
         
-        margin-right: 15rem;
-        
     }
     .caption-style-4 .caption-text p {
         font-size: 0.4em;
-        
-        margin-right: 15rem;
     }
 }
 
@@ -823,3 +830,74 @@ p a{
         width: 100%;
     }
 }
+
+/* //////////////////////////////// */
+
+@media screen and (max-width: 540px) {
+    .rectangleText {
+        width: auto;
+    }
+
+    .rec .rectangleSkillsText div {
+        font-size: 22px;
+    }
+
+    .indexText h1 {
+        font-size: 3rem;
+    }
+
+    .indexText h2 {
+        font-size: 2rem;
+    }
+
+    .projectsRectangle .rectangleText {
+        width: 75%;
+    }
+
+    .projectsRectangle {
+        width: 75%;
+    }
+
+    .projectsRectangle .rectangleText h1 {
+        font-size: 2rem;
+    }
+}
+
+@media screen and (max-width: 650px) and (max-height: 320px) {
+    .rec .rectangleAboutPhoto {
+        width: 220px;
+        height: 220px;
+    }
+
+    .indexText h1 {
+        font-size: 3.5rem;
+    }
+
+    .indexText h2 {
+        font-size: 2rem;
+    }
+}
+
+@media screen and (max-width: 650px) and (max-height: 320px) {
+    .rec .rectangleSkillsText div {
+        font-size: 22px;
+    }
+}
+
+.hey {
+    color: white;
+    width: 100px;
+    
+}
+
+.hey-item {
+    width: 70px;
+    display: inline-block;
+}
+
+.projectsRectangle .rectangleText {
+    position: relative;
+    width: 100%;
+}
+
+
